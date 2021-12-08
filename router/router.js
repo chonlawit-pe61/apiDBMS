@@ -12,7 +12,7 @@ router.get('/vertify',vertify.checkVertify);
 
 //crud
 // router.get('/', controllerGetUser.getData);
-userRouter.route('/').get(async (req, res) => {
+router.route('/').get(async (req, res) => {
     const users = await userModel.find();
     res.json(users);
 });
