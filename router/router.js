@@ -6,6 +6,7 @@ const vertify = require('../controller/vertify');
 const createUser = require('../controller/post.controller');
 const updateUser = require('../controller/put.controller');
 const deleteUser = require('../controller/delete.controller');
+const userModel = require('../model/modelUser');
 //facebook login
 router.post('/signin/facebook',facebookLogin.loginFacebook);
 router.get('/vertify',vertify.checkVertify);
